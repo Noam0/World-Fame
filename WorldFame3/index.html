@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" type="module"></script>
+    <script src="menuButtonsScript.js" type="module"></script>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <div class="overlay" id = overlay></div>
+    <div class="menu-container">
+        <img src="others\logo.png" alt="Logo" class="logo" id = logo> <!-- Add your logo here -->
+        <div class="menu">
+            <button class="menuButton" id="Play">Play</button>
+            <button class="menuButton" id="howToPlayButton">How to Play</button>
+            <button class="menuButton" id="rankingButton">Ranking</button>
+        </div>
+      </div>
+    
+    <div class="grid-container" id = gamePlate >
+      <div class="row headline">
+         <h1 class = stageText>what is the next card color? </h1>
+         <h1 class = ErrorText id = errorText> </h1>
+      </div> <!-- row for the instructions of the stage-->
+
+      <div class="row interactive">
+        <button id = gamePlayButton1>first button</button>
+        <button id = gamePlayButton2>second button</button>
+        <button id = gamePlayButton3>third button</button>
+      </div> <!-- row for the buttons-->
+
+      <div class="row middle"> <!-- row to show the cards-->
+        <!-- Nested grid for the middle row -->
+        <div class="nested-grid">
+          <div class="col">
+            <div class="card" id = deck>
+                <img src="others/cardback.png" alt="Card Back">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" id = card1>Card 1</div>
+          </div>
+          <div class="col">
+            <div class="card" id = card2>Card 2</div>
+          </div>
+          <div class="col">
+            <div class="card" id = card3>Card 3</div>
+          </div>
+          <div class="col">
+            <div class="card" id = card4>Card 4</div>
+          </div>
+          <div class="col">
+            <div class="card" id = card5>Card 5</div>
+          </div>
+        </div>
+      </div>
+      <div class="row lower">Lower Row</div><!-- row to show the smaller button such as how to play, and ranking or restart-->
+    </div>
+  </body>
+  </html>

@@ -1,0 +1,127 @@
+/* styles.css */
+body {
+    /*background: linear-gradient(165deg, #faf8c2, #fff6c0);*/
+   /* Set the background image and position it */
+   background-image: url('others/Background.png');
+   background-size: cover; /* Adjust the background size to cover the entire body */
+   background-position: center; /* Center the background image */
+   background-repeat: no-repeat; /* Prevent the background from repeating */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Use min-height instead of height to ensure the body expands with content */
+
+  display: grid; /* Use CSS Grid to center the elements */
+  place-items: center; /* Center both horizontally and vertically */
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-rows: 10% 8% 40% 10%;
+    grid-gap: 10px;
+    height: 100vh;
+
+    
+    top: 50%; /* Align the top of the gamePlate to the middle of the viewport */
+    left: 50%; /* Align the left of the gamePlate to the middle of the viewport */
+    transform: translate(0%, 14%); /* Center the gamePlate using translate */
+    /* Add other styles as needed */
+
+
+  }
+  
+  
+  .row {
+    /* border: 1px solid #000;*/
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .interactiv{
+
+    /* background-color: #f2f2f3;*/
+
+
+  }
+
+  .headline {
+    /* background-color: #f2f2f2;*/
+  }
+
+  .ErrorText {
+    font-size: 14px;
+    color: rgb(212, 29, 29);
+}
+  
+  .middle {
+   /*  background-color: #d4d4d4; */
+    display: flex; /* Center the nested grid horizontally */
+    justify-content: center;
+    align-items: center; /* Center the nested grid vertically */
+  }
+  
+  /* Nested grid for the middle row */
+  .nested-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px; /* Increase the space between the cards */
+    justify-items: center; /* Center the cards horizontally within each column */
+  }
+  
+  .col {
+    /* To create spacing between the nested grid and the cards */
+    padding: 5px;
+  }
+  
+  .card {
+    border: 1px solid #000;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    /* Set card width and height */
+    width: 100px;
+    height: 150px;
+  }
+
+
+  /* headling styling */
+  .stageText {
+    font-size: 3rem; /* Set the font size to 3rem (adjust the value as needed) */
+    color: #fff; /* Set the text color to white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a drop shadow effect */
+    font-family: "Josefin Sans", sans-serif; /* Set the font-family as desired */
+    /* Add any other styles you want for the headline */
+
+  }
+  #gamePlayButton1{
+    background-color:rgb(166, 0, 0)
+  }
+
+  #gamePlayButton3{
+    background-color:rgb(33, 33, 33)
+
+  }
+
+
+  #gamePlayButton1 , #gamePlayButton2 , #gamePlayButton3 {
+    color: #fff; /* White text color */
+    font-size: 1.5rem;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; /* Add spacing between the buttons */
+    transition: transform 0.2s, box-shadow 0.2s; /* Add smooth transition effects */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    font-family: "Josefin Sans", Bold 700;
+  }
+
+  #gamePlayButton1:hover,
+  #gamePlayButton2:hover,
+  #gamePlayButton3:hover {
+    /* Add styles for hover effect */
+    transform: scale(1.1); /* Increase the button size on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a stronger box shadow on hover */
+  }

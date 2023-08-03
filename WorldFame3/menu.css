@@ -1,0 +1,76 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+  
+  }
+
+.overlay {
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Darken the overlay using RGBA color */
+    backdrop-filter: blur(5px); /* Apply a blur effect to the overlay */
+    pointer-events: none; /* Allow clicks to pass through the overlay */
+  }
+  
+  
+  
+  /* Main button styles */
+  .menuButton {
+    background-color: #FFD700; /* Golden color */
+    color: #fff; /* White text color */
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; /* Add spacing between the buttons */
+    transition: transform 0.2s, box-shadow 0.2s; /* Add smooth transition effects */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    font-family: "Josefin Sans", Bold 700;
+  }
+  
+  
+  .menuButton:hover {
+    transform: scale(1.12); /* Increase the size by 5% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase the box shadow on hover */
+  }
+  
+  /* Position the menu container */
+  .menu-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Display the buttons in one row */
+  .menu {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center the buttons vertically */
+  }
+  
+  .logo {
+    max-width: 2250px; /* Set the maximum width of your logo (increase the size) */
+    max-height: 1250px; /* Set the maximum height of your logo (increase the size) */
+    margin-bottom: 20px; /* Add spacing between the logo and the buttons */
+    transition: transform 0.2s; /* Add a smooth transition effect for the transform property */
+  }
+  
+  
+  
+  /* Position each button individually */
+  #Play {
+    top: 20px;
+  }
+  
+  #howToPlayButton {
+    top: 80px; /* Adjust the spacing between the buttons */
+  }
+  
+  #rankingButton {
+    top: 140px; /* Adjust the spacing between the buttons */
+  }
